@@ -15,9 +15,34 @@ body {
 .container {
     margin: 0 65px;
 }
-nav {
+.main-nav {
+    position: fixed;
+    z-index: 100000;
+    height: 65px;
+    width: 100%;
+    background-color: white;
+    line-height: 4.64286rem;
     .nav-inner {
         margin: 0 65px;
+        a {
+            transition: all 0.5s ease;
+            &:hover {
+                transition: all 0.2s ease;
+            }
+        }
+        .brand {
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-left: 137px;
+            font-size: 17px;
+            letter-spacing: 0.1rem;
+        }
+        .contact-icons {
+            line-height: 4.64286rem;
+        }
+        .menu-icon {
+            font-size: 16px;
+        }
     }
 }
 

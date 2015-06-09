@@ -3,4 +3,13 @@
         margin: 0 auto;
         width: 90%;
     }
+    .main-nav {
+        .nav-inner {
+            margin: 0 auto;
+            width: 90%;
+            .brand {
+                margin-left: 0;
+            }
+        }
+    }
 }
