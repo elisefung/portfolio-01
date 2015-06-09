@@ -1,0 +1,35 @@
+.project-page {
+    .project-info {
+        margin-bottom: 30px;
+    }
+    .project-title {
+        h1 {
+            font-size: 18px;
+            letter-spacing: 0.13rem;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+        .line {
+            height: 2px;
+            width: 40px;
+            border-top: 1px solid $jet;
+            margin-bottom: 20px;
+        }
+        a {
+            color: $primary-color;
+            transition: color 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            &:hover {
+                color: darken($primary-color, 10%);
+                transition: color 0.2s ease;
+            }
+        }
+    }
+    .project-roles {
+        color: #aaa;
+        li {
+            margin-bottom: 3px;
+        }
+    }
+}

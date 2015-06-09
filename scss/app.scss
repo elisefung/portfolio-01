@@ -11,9 +11,19 @@
 
 body {
     letter-spacing: 0.05rem;
+    -webkit-font-smoothing: antialiased;
+}
+.row {
+    max-width: 1310px;
 }
 .container {
     margin: 0 65px;
+}
+.row .columns:first-child {
+    padding-left: 0px;
+}
+.row .columns:last-child {
+    padding-right: 0px;
 }
 .main-nav {
     position: fixed;
@@ -55,6 +65,7 @@ body {
     .projects {
         li {
             transition: all 0.2s ease-in-out;
+            margin-bottom: 10px;
             a {
                 .img-wrap {
                     margin-bottom: 10px;
@@ -78,8 +89,16 @@ body {
 
 footer {
     background-color: white;
-    line-height: 3rem;
+    line-height: 4rem;
     text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    a {
+        transition: color 0.2s ease-in-out;
+        &:hover {
+            transition: color 0.2s ease-in-out;
+        }
+    }
 }
 
+@import "projects";
 @import "responsive";
