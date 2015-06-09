@@ -13,3 +13,13 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    #work {
+        .projects {
+            li {
+                width: 100%;
+            }
+        }
+    }
+}

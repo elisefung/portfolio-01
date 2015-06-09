@@ -18,6 +18,7 @@ body {
 .main-nav {
     position: fixed;
     z-index: 100000;
+    top: 0;
     height: 65px;
     width: 100%;
     background-color: white;
@@ -44,6 +45,41 @@ body {
             font-size: 16px;
         }
     }
+}
+.page-container {
+    margin-top: 100px;
+}
+
+#work {
+    margin-bottom: 30px;
+    .projects {
+        li {
+            transition: all 0.2s ease-in-out;
+            a {
+                .img-wrap {
+                    margin-bottom: 10px;
+                    transition: opacity 0.2s ease-in-out;
+                }
+                span {
+                    transition: color 0.2s ease-in-out;
+                }
+                &:hover {
+                    .img-wrap {
+                        opacity: 0.5;
+                    }
+                    span {
+                        transition: color 0.2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: white;
+    line-height: 3rem;
+    text-transform: uppercase;
 }
 
 @import "responsive";
