@@ -8,7 +8,7 @@
             margin: 0 auto;
             width: 90%;
             .brand {
-                margin-left: -30px;
+                margin-left: -20px;
             }
         }
     }
@@ -34,6 +34,23 @@
                     }
                 }
             }
+        }
+        .project-nav-wrap {
+            margin: 20px 0 100px;
+            .project-nav {
+                max-width: 40%;
+                &.next, &.previous {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+    footer {
+        span {
+            display: none;
+        }
+        a[href="../../resume.pdf"], a[href="resume.pdf"] {
+            float: left;
         }
     }
 }
