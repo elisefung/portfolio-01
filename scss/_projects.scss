@@ -1,5 +1,3 @@
-$fresh-truck: #fff;
-
 .project-page {
     .project-info {
         margin-bottom: 30px;
@@ -37,20 +35,26 @@ $fresh-truck: #fff;
     .project-gallery {
         .img-wrap {
             width: 100%;
-            background-color: lightgoldenrodyellow;
+            background-color: #eee;
+            #fresh-truck & {
+                background-color: lightgoldenrodyellow;
+            }
         }
         .columns {
             margin-bottom: 30px;
         }
     }
     .project-nav-wrap {
-        margin: 30px 0;
+        margin: 30px 0 60px;
         position: relative;
         text-transform: uppercase;
         .project-nav {
             position: absolute;
             &.next {
                 right: 0;
+            }
+            &.previous {
+                left: 0;
             }
         }
     }
