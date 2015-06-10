@@ -39,5 +39,19 @@ $fresh-truck: #fff;
             width: 100%;
             background-color: lightgoldenrodyellow;
         }
+        .columns {
+            margin-bottom: 30px;
+        }
+    }
+    .project-nav-wrap {
+        margin: 30px 0;
+        position: relative;
+        text-transform: uppercase;
+        .project-nav {
+            position: absolute;
+            &.next {
+                right: 0;
+            }
+        }
     }
 }

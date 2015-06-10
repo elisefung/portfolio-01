@@ -37,6 +37,14 @@
         }
     }
 }
+@media #{$medium-up} { 
+    .row .columns:first-child {
+    padding-left: 0px;
+    }
+    .row .columns:last-child {
+        padding-right: 0px;
+    }
+}
 
 @media screen and (max-width: 500px) {
     #work {

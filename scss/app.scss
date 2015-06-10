@@ -19,12 +19,7 @@ body {
 .container {
     margin: 0 65px;
 }
-.row .columns:first-child {
-    padding-left: 0px;
-}
-.row .columns:last-child {
-    padding-right: 0px;
-}
+
 .main-nav {
     position: fixed;
     z-index: 100000;
@@ -92,12 +87,16 @@ footer {
     line-height: 4rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    .container {
+        position: relative;
+    }
     a {
         transition: color 0.2s ease-in-out;
         &:hover {
             transition: color 0.2s ease-in-out;
         }
     }
+    
 }
 
 @import "projects";
