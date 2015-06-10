@@ -1,4 +1,7 @@
 .project-page {
+    .page-container {
+        margin-top: 120px;
+    }
     .project-info {
         margin-bottom: 30px;
     }
@@ -15,14 +18,16 @@
             border-top: 1px solid $jet;
             margin-bottom: 20px;
         }
-        a {
-            color: $primary-color;
-            transition: color 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.1rem;
-            &:hover {
-                color: darken($primary-color, 10%);
+        p {
+            margin-bottom: 8px;
+            a {
+                color: $primary-color;
                 transition: color 0.2s ease;
+                text-transform: uppercase;
+                &:hover {
+                    color: darken($primary-color, 10%);
+                    transition: color 0.2s ease;
+                }
             }
         }
     }

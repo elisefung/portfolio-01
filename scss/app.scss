@@ -10,14 +10,27 @@
 "foundation/components/visibility";
 
 body {
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.03rem;
     -webkit-font-smoothing: antialiased;
+}
+p {
+    a {
+        color: $primary-color;
+        transition: color 0.2 ease;
+        &:hover {
+            color: darken($primary-color, 10%);
+            transition: color 0.2 ease;
+        }
+    }
 }
 .row {
     max-width: 1310px;
 }
 .container {
     margin: 0 65px;
+}
+.page-container {
+    margin-top: 100px;
 }
 
 .main-nav {
@@ -50,9 +63,6 @@ body {
             font-size: 16px;
         }
     }
-}
-.page-container {
-    margin-top: 100px;
 }
 
 #work {
