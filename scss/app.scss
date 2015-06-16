@@ -12,13 +12,21 @@ body {
     letter-spacing: 0.03rem;
     -webkit-font-smoothing: antialiased;
 }
+a {
+    color: $jet;
+    transition: color 0.2s ease;
+    &:hover {
+        color: $primary-color;
+        transition: color 0.2s ease;
+    }
+}
 p {
     a {
         color: $primary-color;
-        transition: color 0.2 ease;
+        transition: color 0.2s ease;
         &:hover {
             color: darken($primary-color, 10%);
-            transition: color 0.2 ease;
+            transition: color 0.2s ease;
         }
     }
 }
@@ -60,6 +68,16 @@ p {
         }
         .menu-icon {
             font-size: 16px;
+        }
+    }
+    .menu {
+        position: absolute;
+        left: 1px;
+        background: lighten($primary-color, 70%);
+        padding: 20px 45px;
+        li {
+            padding: 8px 0;
+            text-transform: uppercase;
         }
     }
 }
@@ -106,6 +124,44 @@ p {
         }
     }
     
+}
+
+#about {
+    margin: 50px 0;
+}
+#resume {
+    margin-bottom: 30px;
+    .section-header {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.09em;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+    .company {
+        margin-bottom: 30px;
+    }
+    .company-logo {
+        width: 50px;
+        position: absolute;
+    }
+    .company-info {
+        margin-left: 70px;
+        .company-name {
+            font-size: 18px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .date, .location {
+            font-size: 14px;
+            color: #aaa;
+        }
+    }
+    .skills-list {
+        li {
+            padding: 4px 0;
+        }
+    }
 }
 
 @import "projects";
