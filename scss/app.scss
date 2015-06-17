@@ -39,6 +39,13 @@ p {
 .page-container {
     margin-top: 100px;
 }
+.section-header {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.09em;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
 
 .main-nav {
     position: fixed;
@@ -59,7 +66,7 @@ p {
         .brand {
             text-transform: uppercase;
             font-weight: 700;
-            margin-left: 137px;
+            margin-left: 130px;
             font-size: 17px;
             letter-spacing: 0.1rem;
         }
@@ -83,7 +90,7 @@ p {
 }
 
 #work {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     .projects {
         li {
             transition: all 0.2s ease-in-out;
@@ -114,30 +121,51 @@ p {
     line-height: 4rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    .container {
-        position: relative;
+    padding: 20px 0 15px;
+    p {
+        margin-bottom: 0;
     }
-    a {
-        transition: color 0.2s ease-in-out;
-        &:hover {
-            transition: color 0.2s ease-in-out;
+    .container {
+        margin: 0 65px;
+    }
+}
+
+#banner {
+    background: $primary-color url('../img/elise.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+}
+#about {
+    padding: 50px 0;
+    background-color: #DAF2EE;
+}
+#contact {
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    padding: 50px 0 20px;
+    ul {
+        display: inline-block;
+        li {
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+            margin: 0 15px;
+            a {
+                color: $primary-color;
+                span {
+                    color: $jet;
+                }
+                
+            }
         }
+        .separator {
+                color: #aaa;
+            }
     }
     
 }
-
-#about {
-    margin: 50px 0;
-}
 #resume {
-    margin-bottom: 30px;
-    .section-header {
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 0.09em;
-        margin-bottom: 30px;
-        font-size: 14px;
-    }
+    margin: 50px 0;
     .company {
         margin-bottom: 30px;
     }

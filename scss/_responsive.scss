@@ -45,19 +45,25 @@
             }
         }
     }
-    .footer {
-        line-height: auto;
-        ul {
-            padding: 20px 0 10px;
-            margin-bottom: 0;
+    #banner {
+        height: 200px;
+    }
+    #resume {
+        .company:last-child {
+            margin-bottom: 50px;
+        }
+        .skills-list {
             li {
-                margin-bottom: 8px;
-            }
-            .line {
-                height: 2px;
-                width: 100%;
-                margin: 10px 0 15px;
-                border-bottom: 1px solid #eee;
+                display: inline;
+                margin-right: 8px;
+                &::after {
+                    content: ', ';
+                }
+                &:last-child {
+                    &::after {
+                        content: '';
+                    }
+                }
             }
         }
     }
@@ -68,6 +74,11 @@
     }
     .row .columns:last-child {
         padding-right: 0px;
+    }
+}
+@media #{$medium-only} {
+    #banner {
+        height: 300px;
     }
 }
 
