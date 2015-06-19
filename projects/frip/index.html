@@ -12,6 +12,7 @@
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../stylesheets/app.css" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
     <script src="../../bower_components/modernizr/modernizr.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -87,8 +88,10 @@
                 </div>
                 <div class="row">
                     <div class="small-12 columns">
-                        <div class="img-wrap text-center">
-                            <img src="../frip/frip-3.png" alt="Image of frip landing page" />
+                        <div class="slider">
+                            <div><img src="../frip/frip-3.1.png" alt="Image of Frip landing page" /></div>
+                            <div><img src="../frip/frip-3.png" alt="Image of Frip landing page" /></div>
+                            <div><img src="../frip/frip-3.2.png" alt="Image of Frip landing page" /></div>
                         </div>
                     </div>
                 </div>
@@ -116,6 +119,18 @@
     <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../../bower_components/foundation/js/foundation.min.js"></script>
     <script src="../../js/app.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slider').slick({
+            autoplay: true,
+            arrows: false,
+              fade: true,
+            pauseOnHover: false,
+              speed: 600
+          });
+        });
+    </script>
 </body>
 
 </html>
