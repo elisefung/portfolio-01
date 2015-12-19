@@ -67,7 +67,7 @@ p {
         .brand {
             text-transform: uppercase;
             font-weight: 700;
-            margin-left: 100px;
+            margin-left: 145px;
             font-size: 17px;
             letter-spacing: 0.1rem;
         }
@@ -99,6 +99,7 @@ p {
             a {
                 .img-wrap {
                     margin-bottom: 10px;
+                    opacity: 1;
                     transition: opacity 0.2s ease-in-out;
                 }
                 span {
@@ -106,7 +107,8 @@ p {
                 }
                 &:hover {
                     .img-wrap {
-                        opacity: 0.5;
+                        opacity: 0.8;
+                        transition: opacity 0.2s ease-in-out;
                     }
                     span {
                         transition: color 0.2s ease-in-out;
@@ -126,8 +128,8 @@ p {
     p {
         margin-bottom: 0;
     }
-    .container {
-        margin: 0 65px;
+    .footer-location {
+        text-align: right;
     }
 }
 
@@ -146,8 +148,9 @@ p {
 #contact {
     background-color: white;
     border-bottom: 1px solid #EAEAEA;
-    padding: 50px 0 20px;
-    ul {
+    padding: 40px 0 20px;
+    .contact-list {
+        margin-left: 0px;
         display: inline-block;
         li {
             display: inline-block;

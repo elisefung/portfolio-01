@@ -21,7 +21,7 @@
         }
         .project-roles {
             text-align: center;
-            margin: 30px 0 10px;
+            margin: 20px 0;
             li {
                 display: inline-block;
                 margin-right: 8px;
@@ -65,6 +65,23 @@
                     }
                 }
             }
+        }
+    }
+    #contact {
+        .contact-list {
+            li:first-child {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .footer {
+        p {
+            text-align: center;
+        }
+        .footer-location {
+            text-align: center;
+            margin-top: 10px;
         }
     }
 }
