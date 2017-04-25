@@ -179,21 +179,100 @@ p {
         display: flex;
         flex: 1;
         flex-direction: column;
-        &.left {
-            margin-right: 45px;
+        margin-right: 45px;
+        &.right {
+            margin-right: 0;
         }
         .project {
             margin-bottom: 45px;
-            .img-wrap {
-                width: inherit;
-                height: inherit;
+            .thumb-inner {
+                position: relative;
+                &:hover {
+                    .thumb-hover {
+                        opacity: 1;
+                        transition: all .3s ease;
+                        -moz-transition: all .3s ease;
+                        -webkit-transition: all .3s ease;
+                    }
+                }
             }
-            &.dribbble {
-                background-color: #ea4c89;
+            .thumb-hover {
+                opacity: 0;
+                position: absolute;
+                background-color: rgba(0,0,0,.8);
                 width: 100%;
-                height: 240px;
-                padding: 40px;
-                color: white;
+                height: 100%;
+                transition: all .3s ease;
+                -moz-transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+                .details {
+                    position: absolute;
+                    bottom: 0;
+                    padding: 30px 40px;
+                    h3 {
+                        color: white;
+                        margin-bottom: 0;
+                    }
+                    p {
+                        color: white;
+                        display: block;
+                        font-size: 1.3rem;
+                    }
+                    &.protected {
+                        h3 {
+                            margin-left: 25px;
+                            &::before {
+                                content: '';
+                                background: url(../img/lock.png) center no-repeat;
+                                width: 15px;
+                                height: 20px;
+                                display: block;
+                                position: absolute;
+                                margin-top: 7px;
+                                margin-left: -25px;
+                            }
+                        }
+                    }
+                }
+            }
+            &#drive {
+                .thumb-hover {
+                    background-color: rgba(32, 39, 53, 0.9);
+                }
+            }
+            &#fabric {
+                .thumb-hover {
+                    background-color: rgba(0, 170, 232, 0.9);
+                }
+            }
+            &#playstation {
+                .thumb-hover {
+                    background-color: rgba(55, 120, 252, 0.9);
+                }
+            }
+            &#dmv {
+                .thumb-hover {
+                    background-color: rgba(245, 149, 104, 0.9);
+                }
+            }
+            &#paradata {
+                .thumb-hover {
+                    background-color: rgba(211, 240, 240, 0.9);
+                    h3,p {
+                        color: $jet;
+                    }
+                }
+            }
+            &#flex {
+                .thumb-hover {
+                    background-color: rgba(238, 238, 238, 0.9);
+                    h3,p {
+                        color: $jet;
+                    }
+                    h3::before {
+                        background-image: url('../img/lock-dark.png');
+                    }
+                }
             }
         }
     }
@@ -220,40 +299,14 @@ p {
     height: 400px;
 }
 #about {
-    padding-bottom: 50px;
     background-color: #DAF2EE;
     h2 {
-        padding-top: 50px;
+        padding: 80px 0;
+        font-size: 2.3rem !important;
     }
-}
-#contact {
-    background-color: white;
-    border-bottom: 1px solid #EAEAEA;
-    padding: 40px 0 20px;
-    .contact-list {
-        margin-left: 0px;
-        display: inline-block;
-        li {
-            display: inline-block;
-            text-transform: uppercase;
-            letter-spacing: 0.09em;
-            margin: 0 15px;
-            a {
-                color: $primary-color;
-                span {
-                    color: $jet;
-                }
-
-            }
-        }
-        .separator {
-            color: #aaa;
-        }
-    }
-
 }
 #resume {
-    margin: 50px 0;
+    margin: 80px 0;
     .company {
         margin-bottom: 30px;
     }
@@ -283,4 +336,30 @@ p {
             padding: 4px 0;
         }
     }
+}
+#contact {
+    background-color: white;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 40px 0 20px;
+    .contact-list {
+        margin-left: 0px;
+        display: inline-block;
+        li {
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+            margin: 0 15px;
+            a {
+                color: $primary-color;
+                span {
+                    color: $jet;
+                }
+
+            }
+        }
+        .separator {
+            color: #aaa;
+        }
+    }
+
 }
